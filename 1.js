@@ -57,9 +57,6 @@
 
 // console.log(arr[1]);
 
-
-// alert('Hello');
-
 // const result = confirm("Are you here?");
 // console.log(result);
 
@@ -122,7 +119,7 @@ const a = prompt('Один из последних просмотренных ф
       d = +prompt('На сколько оцените его?', "");
 
 
-personalMovieDB.movies[a] = b; // как записать ключ и значение в объект!!!
+personalMovieDB.movies[a] = b; // как записать ключ и значение в объект!!!лучше не через точку
 personalMovieDB.movies[c] = d; 
 
 console.log(personalMovieDB);
