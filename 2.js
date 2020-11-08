@@ -190,33 +190,102 @@
 
 // const calc = (a, b) => { return a + b; };
 
-const str = 'TeSt';
-const arr = [1, 2, 4];
+// const str = 'TeSt';
+// const arr = [1, 2, 4];
 
-//console.log(str[2] = 'd');
+// //console.log(str[2] = 'd');
 
-console.log(str.toUpperCase());
-console.log(str.toLowerCase());
-console.log(str);
+// console.log(str.toUpperCase());
+// console.log(str.toLowerCase());
+// console.log(str);
 
-const fruit = 'Some fruit';
-console.log(fruit.indexOf('g'));
+// const fruit = 'Some fruit';
+// console.log(fruit.indexOf('g'));
 
-const logg = "Hello world";
+// const logg = "Hello world";
 
-//console.log(logg.slice(6, 11)); // в аргументе end указываем то, что не включается
-//console.log(logg.slice(-5, -1)); 
+// //console.log(logg.slice(6, 11)); // в аргументе end указываем то, что не включается
+// //console.log(logg.slice(-5, -1)); 
 
-//console.log(logg.substring(6, 11)); 
-//console.log(logg.substr(6, 11)); // вместо аргумента end мы указываем длину, которую надо вырезать
+// //console.log(logg.substring(6, 11)); 
+// //console.log(logg.substr(6, 11)); // вместо аргумента end мы указываем длину, которую надо вырезать
 
-const num = 12.2;
-console.log(Math.round(num));
+// const num = 12.2;
+// console.log(Math.round(num));
 
-const test = '12.2px';
-//console.log(parseInt(test));
-console.log(parseFloat(test)); // возвращает значение с точкой
-
-
+// const test = '12.2px';
+// //console.log(parseInt(test));
+// console.log(parseFloat(test)); // возвращает значение с точкой
 
 
+// function first() {
+//     // Do something
+//     setTimeout(function() {
+//         console.log(1);
+//     }, 500);
+// }
+
+// function second() {
+//     console.log(2);
+// }
+
+// first();
+// second();
+
+// // если функции идут одна за другой, это не значит, что они выполняются одна за другой
+
+// function learnJS(lang, callback) {
+//     console.log(`Я учу ${lang}`);
+//     callback();
+// }
+
+// function done() {
+//     console.log("Я прошел этот урок");
+// }
+
+// learnJS('Javascript', done); // круглые скобки у функции не ставятся
+
+
+// Объекты
+
+const options = {
+    name: 'test',
+    width: 1024,
+    height: 1024,
+    colors: {
+        border: 'black',
+        bg: 'red'
+    },
+    makeTest: function() {
+        console.log('Test');
+    }
+};
+
+options.makeTest();
+
+const {border, bg} = options.colors; // деструктуризация объектов
+console.log(border);
+
+// console.log(options.name);
+
+// delete options.name; // удалить свойство из объекта
+
+// console.log(options);
+
+// let counter = 0;
+
+// for (let key in options) {
+//     if (typeof(options[key]) === 'object') {
+//         for (let i in options[key]) {
+//             console.log(`Свойство ${i} имеет значение ${options[key][i]}`);
+            
+//         }
+//     } else {
+//         console.log(`Свойство ${key} имеет значение ${options[key]}`);
+//         counter++;
+//     }
+// }
+
+// console.log(counter);
+
+//console.log(Object.keys(options).length);
