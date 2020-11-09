@@ -248,23 +248,23 @@
 
 // Объекты
 
-const options = {
-    name: 'test',
-    width: 1024,
-    height: 1024,
-    colors: {
-        border: 'black',
-        bg: 'red'
-    },
-    makeTest: function() {
-        console.log('Test');
-    }
-};
+// const options = {
+//     name: 'test',
+//     width: 1024,
+//     height: 1024,
+//     colors: {
+//         border: 'black',
+//         bg: 'red'
+//     },
+//     makeTest: function() {
+//         console.log('Test');
+//     }
+// };
 
-options.makeTest();
+// options.makeTest();
 
-const {border, bg} = options.colors; // деструктуризация объектов
-console.log(border);
+// const {border, bg} = options.colors; // деструктуризация объектов
+// console.log(border);
 
 // console.log(options.name);
 
@@ -289,3 +289,36 @@ console.log(border);
 // console.log(counter);
 
 //console.log(Object.keys(options).length);
+
+
+//Массивы и псевдомассивы
+
+const arr = [1, 2, 3, 6, 8];
+// arr[99] = 0;
+// console.log(arr.length);
+// console.log(arr);
+
+arr.forEach(function(item, i, arr) {
+    console.log(`${i}: ${item} внутри массива ${arr}`);
+});
+
+//item - элемент массива
+//i - номер по порядку
+//arr - массив, с которым работаем
+
+// arr.pop(); // удаляет последний элемент из массива
+// arr.push(10); // добавляет
+// console.log(arr);
+
+// for (let i = 0; i < arr.length; i++) {
+//     console.log(arr[i]);
+// }
+
+for (let value of arr) {
+    console.log(value);
+} // в этом методе можно использовать break и continiu
+
+
+const str = prompt('', '');
+const products = str.split(', ');
+console.log(products.join('; '));
