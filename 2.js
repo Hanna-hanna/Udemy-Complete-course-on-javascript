@@ -293,14 +293,21 @@
 
 //Массивы и псевдомассивы
 
-const arr = [1, 2, 3, 6, 8];
+// const arr = [1, 2, 89, 11, 3, 6, 8];
+// arr.sort(compareNum);
+// console.log(arr);
+
+// function compareNum(a, b) {
+//     return a - b;
+// } // callback фукнция для того, чтобы отсортировалось не по строкам, а по номерам
+
 // arr[99] = 0;
 // console.log(arr.length);
 // console.log(arr);
 
-arr.forEach(function(item, i, arr) {
-    console.log(`${i}: ${item} внутри массива ${arr}`);
-});
+// arr.forEach(function(item, i, arr) {
+//     console.log(`${i}: ${item} внутри массива ${arr}`);
+// });
 
 //item - элемент массива
 //i - номер по порядку
@@ -314,11 +321,16 @@ arr.forEach(function(item, i, arr) {
 //     console.log(arr[i]);
 // }
 
-for (let value of arr) {
-    console.log(value);
-} // в этом методе можно использовать break и continiu
+// for (let value of arr) {
+//     console.log(value);
+// } // в этом методе можно использовать break и continiu
 
 
-const str = prompt('', '');
-const products = str.split(', ');
-console.log(products.join('; '));
+// const str = prompt('', '');
+// const products = str.split(', '); // разделили строчку и получили массив
+// console.log(products.join('; ')); // склейка массива
+// products.sort(); // сортировка
+
+
+// Передача по ссылке, оператор spread
+
