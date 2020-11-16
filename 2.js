@@ -460,3 +460,83 @@
 //Object.setPrototypeOf(jonh, soldier); // прототип по новому
 
 // console.log(jonh.sayHello());
+
+
+//Динамическая типизация
+
+//to string
+
+// console.log(typeof(String('4'))); 
+
+// console.log(typeof(5 + '')); // при сложении со строкой получается строка
+
+// const num = 5;
+// console.log('https://vk.com/catalog/' + num);
+
+// const fontSize = 26 + 'px';
+
+// //to number
+
+// console.log(typeof(Number('4'))); 
+
+// console.log(typeof(+'4')); // унарный плюс прекращает в число
+
+// console.log(typeof(parseInt('15px', 10)));
+
+// let answ = +prompt('Hello', '');
+
+// //to boolean
+
+// //0, '', null, undefined, NaN;
+
+// let switcher = null;
+// if (switcher) {
+//     console.log('Working');
+// }
+
+
+// switcher = 1;
+// if (switcher) {
+//     console.log('Working');
+// }
+
+
+// console.log(typeof(Boolean('4'))); 
+
+
+// console.log(typeof(!!'444')); 
+
+// Задачи с собеседований
+
+let x = 5; alert(x++); // 5, постфиксная форма записи инкремента
+
+[] + false - null + true;
+console.log(typeof([] + false)); //пустой массив приводится к пустой строке
+console.log([] + false - null + true); // NaN
+
+let y = 1;
+let x = y = 2;
+alert(x); // 2
+
+console.log([] + 1 + 2); // 12
+
+alert('1'[0]); // 1
+
+console.log(2 && 1 && null && 0 && undefined); // null - оператор И запинается на лжи
+
+console.log(!!(1 && 2) === (1 && 2)); // false
+
+alert (null || 2 && 3 || 4); // 3, или запинается на правде
+
+const a = [1, 2, 3],
+      b = [1, 2, 3]; // массивы не равны
+
+console.log(a == b);
+
+alert(+"Infinity"); // Number Infinity
+
+console.log('Ежик' > "Яблоко"); // строчки сравниваются посимвольно
+
+console.log(0 || '' || 2 || undefined || true); // 2, или запинается на правде
+
+
